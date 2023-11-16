@@ -1,0 +1,22 @@
+# Meraki_Compliance
+
+This repository contains automated compliance checks scripts for Meraki Environments. 
+
+## Prerequisites
+
+A Meraki API Key is required for all scripts in this repository
+
+This script is used to auto-audit 5 GHz Radio Settings mismatch for Meraki WLAN.
+
+## Scripts
+
+MR_radio_mismatch_audit.py : checks diffrence between configured and active 5 GHz channel for all organization
+
+### Usage
+
+1. Set your Meraki API key as an environment variable `MERAKI_API_KEY`.
+2. Run the script: `python MR_radio_mismatch_audit.py`
+3. If no environment variable is found, you will be prompted to enter your API key.
+4. Enter your Organization ID when prompted.
+5. The script will then audit all wireless devices in the selected organization and report any mismatches on 5 GHz radio settings.
+
